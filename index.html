@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mount Diablo Media | Premier Bay Area Visual Production</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-600 selection:text-white">
 
-    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-900">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
                 <img src="Mount Diablo Media logo.png" alt="Mount Diablo Media Logo" class="h-12 w-auto object-contain">
             </a>
 
+            <!-- Nav Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#commercial" class="hover:text-emerald-400 transition-colors">Commercial & Brands</a>
+                <a href="#portfolio" class="hover:text-emerald-400 transition-colors">Featured Work</a>
+                <a href="#commercial" class="hover:text-emerald-400 transition-colors">Commercial</a>
                 <a href="#private" class="hover:text-emerald-400 transition-colors">Private Milestones</a>
-                <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
             </nav>
 
+            <!-- CTA Button -->
             <div>
-                <a href="#contact" class="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-500 transition-all shadow-sm shadow-emerald-950/50">
+                <a href="#contact" class="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-500 transition-all shadow-sm">
                     Get in Touch
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="relative py-28 md:py-36 px-6 flex items-center justify-center text-center bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-b border-slate-800/60">
+    <!-- Hero Section -->
+    <section class="relative py-28 md:py-36 px-6 flex items-center justify-center text-center bg-slate-950 border-b border-slate-900">
         <div class="max-w-4xl mx-auto space-y-8">
-            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3.5 py-1.5 bg-blue-950/80 text-blue-400 border border-blue-800/40 rounded-full">
+            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3.5 py-1.5 bg-blue-950/80 text-blue-400 border border-blue-900/40 rounded-full">
                 Serving the Entire Bay Area & Northern California
             </span>
             
@@ -43,28 +49,65 @@
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#commercial" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg shadow-emerald-900/20">
-                    Explore Commercial Work
+                <a href="#commercial" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg shadow-emerald-950/50">
+                    Explore Commercial
                 </a>
-                <a href="#private" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-8 py-3.5 rounded-full border border-slate-700 transition-all">
+                <a href="#private" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-200 font-medium px-8 py-3.5 rounded-full border border-slate-800 transition-all">
                     Explore Private Sessions
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Tailored Visual Solutions</h2>
-            <p class="text-slate-400 max-w-xl mx-auto">Uncompromising production value whether scaling your enterprise or preserving your personal legacy.</p>
+    <!-- Immersive Visual Portfolio Grid (Inspired by clean editorial layouts) -->
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-semibold tracking-wider text-emerald-400 uppercase">Selected Portfolio</span>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mt-2">Crafted Without Compromise</h2>
+            </div>
+            <p class="text-slate-400 max-w-md text-sm">Spanning rugged wilderness landscapes, cinematic drone sweeps, high-end corporate campaigns, and intimate personal milestones.</p>
         </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Portfolio Item 1 -->
+            <div class="group relative bg-slate-900 rounded-xl overflow-hidden aspect-[4/5] border border-slate-900 flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div class="absolute bottom-6 left-6 right-6 space-y-1">
+                    <span class="text-xs text-emerald-400 font-medium uppercase tracking-wider">Cinematic Drone</span>
+                    <h3 class="text-lg font-semibold text-white">Northern California Aerials</h3>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="group relative bg-slate-900 rounded-xl overflow-hidden aspect-[4/5] border border-slate-900 flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div class="absolute bottom-6 left-6 right-6 space-y-1">
+                    <span class="text-xs text-blue-400 font-medium uppercase tracking-wider">Private Milestone</span>
+                    <h3 class="text-lg font-semibold text-white">Destination Weddings</h3>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="group relative bg-slate-900 rounded-xl overflow-hidden aspect-[4/5] border border-slate-900 flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div class="absolute bottom-6 left-6 right-6 space-y-1">
+                    <span class="text-xs text-emerald-400 font-medium uppercase tracking-wider">Commercial Production</span>
+                    <h3 class="text-lg font-semibold text-white">Brand Campaigns & Spaces</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dual Service Focus Tracks -->
+    <section class="py-16 px-6 max-w-7xl mx-auto border-t border-slate-900">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div id="commercial" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+            <!-- Commercial Track -->
+            <div id="commercial" class="bg-slate-900/50 border border-slate-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
                 <div class="space-y-4">
                     <span class="text-xs font-semibold tracking-wider text-emerald-400 uppercase">For Businesses & Brands</span>
                     <h3 class="text-2xl font-bold text-white">Commercial & Corporate Production</h3>
-                    <p class="text-slate-400 leading-relaxed">
+                    <p class="text-slate-400 leading-relaxed text-sm">
                         Drive market growth with high-end aerial drone cinematography, commercial real estate portfolios, and enterprise branding campaigns engineered to convert.
                     </p>
                 </div>
@@ -73,7 +116,26 @@
                 </a>
             </div>
 
-            <div id="private" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
+            <!-- Private Track -->
+            <div id="private" class="bg-slate-900/50 border border-slate-900 rounded-2xl p-8 space-y-6 flex flex-col justify-between">
                 <div class="space-y-4">
                     <span class="text-xs font-semibold tracking-wider text-blue-400 uppercase">For Individuals & Families</span>
-                    <h
+                    <h3 class="text-2xl font-bold text-white">Private Milestones & Weddings</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Preserve your life's defining moments with bespoke photography and cinematic storytelling tailored for weddings, engagements, and family legacies.
+                    </p>
+                </div>
+                <a href="#contact" class="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+                    Book a Private Session &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="border-t border-slate-900 bg-slate-950 py-12 px-6 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Mount Diablo Media. All rights reserved. Based in Concord, CA.</p>
+    </footer>
+
+</body>
+</html>
