@@ -3,255 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mount Diablo Media | High-End Visual Content Production</title>
+    <title>Mount Diablo Media | Private Milestones & Storytelling</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmstone: {
+                            50: '#fdfbf7',
+                            100: '#f4ece1',
+                            800: '#2d2721',
+                            900: '#1c1815',
+                        },
+                        terracotta: {
+                            600: '#b85d43',
+                            700: '#9e4c34',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-600 selection:text-white">
+<body class="bg-warmstone-50 text-warmstone-800 font-sans antialiased selection:bg-terracotta-600 selection:text-white">
 
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-warmstone-50/90 backdrop-blur-md border-b border-warmstone-100">
         <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+            <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
-                <img src="Mount Diablo Media PNG logo.png" alt="Mount Diablo Media Logo" class="h-24 w-auto object-contain">
+                <img src="images/Mount Diablo Media logo.png" alt="Mount Diablo Media Logo" class="h-20 w-auto object-contain">
             </a>
 
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
-                <a href="#portfolio" class="hover:text-amber-600 transition-colors">Featured Work</a>
-                <a href="#commercial" class="hover:text-amber-600 transition-colors">Commercial</a>
-                <a href="#milestones" class="hover:text-amber-600 transition-colors">Private Milestones</a>
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-warmstone-800/80">
+                <a href="#milestones" class="hover:text-terracotta-600 transition-colors">Private Milestones</a>
+                <a href="#pricing" class="hover:text-terracotta-600 transition-colors">Investment</a>
+                <a href="commercial.html" class="hover:text-terracotta-600 transition-colors">Commercial Work &rarr;</a>
             </nav>
 
+            <!-- CTA Button -->
             <div>
-                <a href="#contact" class="bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-800 transition-all shadow-sm">
-                    Get in Touch
+                <a href="#contact" class="bg-terracotta-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-terracotta-700 transition-all shadow-sm">
+                    Inquire Now
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="relative py-32 md:py-48 px-6 flex items-center justify-center text-center overflow-hidden bg-slate-950 border-b border-slate-800/60">
+    <!-- Hero Section -->
+    <section class="relative py-32 md:py-48 px-6 flex items-center justify-center text-center overflow-hidden bg-warmstone-900 border-b border-warmstone-800">
+        <!-- Background Image Carousel Container -->
         <div id="hero-carousel" class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 hero-slide" style="background-image: url('images/Calvin:Cristina Kissing.jpg');"></div>
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 hero-slide" style="background-image: url('images/Garcia%20Kiss%20Noa.jpg');"></div>
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 hero-slide" style="background-image: url('images/Wedding%20Dress%20on%20Stairs.jpg');"></div>
             
-            <div class="absolute inset-0 bg-slate-950/40"></div>
+            <!-- Warm Overlay -->
+            <div class="absolute inset-0 bg-warmstone-900/50"></div>
         </div>
 
+        <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mx-auto space-y-8">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md">
-                Premier Bay Area Commercial Production & Private Milestones
+            <h1 class="text-4xl md:text-6xl font-serif font-normal tracking-tight text-warmstone-50 leading-tight drop-shadow-md">
+                Timeless Personal Storytelling & Milestones
             </h1>
-            <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto font-light drop-shadow">
-                Elevated visual content for high-impact brand campaigns and timeless personal storytelling.
+            <p class="text-lg md:text-xl text-warmstone-100/90 max-w-2xl mx-auto font-light drop-shadow">
+                Preserving life’s defining moments with warm, organic photography across Northern California.
             </p>
-            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-full backdrop-blur-md">
+            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-4 py-1.5 bg-warmstone-900/60 text-amber-200 border border-amber-200/20 rounded-full backdrop-blur-md">
                 Serving the Entire Bay Area & Northern California
             </span>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#commercial" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg">
-                    Explore Commercial
+                <a href="#milestones" class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg">
+                    View Portfolio
                 </a>
-                <a href="#milestones" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-900 text-slate-200 font-medium px-8 py-3.5 rounded-full border border-slate-700 backdrop-blur-sm transition-all">
-                    Explore Private Sessions
+                <a href="commercial.html" class="w-full sm:w-auto bg-warmstone-900/80 hover:bg-warmstone-900 text-warmstone-100 font-medium px-8 py-3.5 rounded-full border border-warmstone-700 backdrop-blur-sm transition-all">
+                    Explore Commercial Work
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Immersive Visual Portfolio Grid -->
-    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto space-y-24">
-        
-        <div id="commercial" class="space-y-12">
-            <div class="text-center space-y-4">
-                <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">
-                    Commercial Work
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Commercial Production</h2>
-                <p class="text-slate-400 max-w-xl mx-auto">High-impact visual content tailored for brand campaigns, professionals, and commercial storytelling.</p>
-            </div>
+    <!-- Private Milestones Portfolio Grid -->
+    <section id="milestones" class="py-24 px-6 max-w-7xl mx-auto space-y-12">
+        <div class="text-center space-y-4">
+            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
+                Private Sessions
+            </span>
+            <h2 class="text-3xl md:text-4xl font-serif font-normal text-warmstone-900">Private Milestones</h2>
+            <p class="text-warmstone-800/70 max-w-xl mx-auto">Intimate portraits, engagements, and family legacies captured with a natural, artistic touch.</p>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="group relative bg-slate-800 rounded-2xl overflow-hidden aspect-[4/3] border border-slate-700/50 shadow-md">
-                    <img src="images/Tom%20Hofbauer.jpg" alt="Tom Hofbauer Commercial Capture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                        <span class="text-white font-medium text-sm">Commercial Portraiture & Branding</span>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
+                <img src="images/Avery%20Brooklyn%20Portrait.jpg" alt="Portraits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-medium text-sm">Portraits</span>
+                </div>
+            </div>
+            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
+                <img src="images/Calvin:Cristina%20Kissing.jpg" alt="Calvin and Cristina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-medium text-sm">Couple Session</span>
+                </div>
+            </div>
+            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
+                <img src="images/Wedding%20Dress%20on%20Stairs.jpg" alt="Wedding Dress on Stairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-medium text-sm">Editorial & Detail Capture</span>
                 </div>
             </div>
         </div>
-
-        <div id="milestones" class="space-y-12 pt-12 border-t border-slate-800">
-            <div class="text-center space-y-4">
-                <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
-                    Private Sessions
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Private Milestones</h2>
-                <p class="text-slate-400 max-w-xl mx-auto">Timeless personal storytelling, intimate sessions, and milestone captures across Northern California.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="group relative bg-slate-800 rounded-2xl overflow-hidden aspect-[4/3] border border-slate-700/50 shadow-md">
-                    <img src="images/Avery%20Brooklyn%20Portrait.jpg" alt="Portraits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                        <span class="text-white font-medium text-sm">Portraits</span>
-                    </div>
-                </div>
-                <div class="group relative bg-slate-800 rounded-2xl overflow-hidden aspect-[4/3] border border-slate-700/50 shadow-md">
-                    <img src="images/Calvin:Cristina%20Kissing.jpg" alt="Calvin and Cristina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                        <span class="text-white font-medium text-sm">Couple Session</span>
-                    </div>
-                </div>
-                <div class="group relative bg-slate-800 rounded-2xl overflow-hidden aspect-[4/3] border border-slate-700/50 shadow-md">
-                    <img src="images/Wedding%20Dress%20on%20Stairs.jpg" alt="Wedding Dress on Stairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                        <span class="text-white font-medium text-sm">Editorial & Detail Capture</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
-    <!-- Private Milestones Pricing Section (Correctly Placed Outside the Grid) -->
-    <section id="pricing" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800">
+    <!-- Private Milestones Pricing Section -->
+    <section id="pricing" class="py-24 px-6 max-w-7xl mx-auto border-t border-warmstone-200 bg-warmstone-100/50 rounded-3xl my-12">
         <div class="text-center space-y-4 mb-16">
-            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
                 Straightforward Investment
             </span>
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Private Milestone Sessions</h2>
-            <p class="text-slate-400 max-w-xl mx-auto">Clear, predictable packages for family milestones, portraits, and intimate sessions across Northern California.</p>
+            <h2 class="text-3xl md:text-4xl font-serif font-normal text-warmstone-900">Milestone Session Packages</h2>
+            <p class="text-warmstone-800/70 max-w-xl mx-auto">Clear, transparent investment for family milestones and portraits across Northern California.</p>
         </div>
 
-        <!-- Pricing Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            
-            <!-- Tier 1: Essential -->
-            <div class="bg-slate-800/60 rounded-2xl p-8 border border-slate-700/60 flex flex-col justify-between shadow-xl backdrop-blur-sm">
+            <!-- Tier 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-warmstone-200 flex flex-col justify-between shadow-sm">
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Essential Milestone</h3>
-                        <p class="text-slate-400 text-sm mt-1">Perfect for quick portrait sessions or individual milestones.</p>
+                        <h3 class="text-xl font-serif font-semibold text-warmstone-900">Essential Milestone</h3>
+                        <p class="text-warmstone-800/60 text-sm mt-1">Perfect for quick portrait sessions or individual milestones.</p>
                     </div>
                     <div class="flex items-baseline gap-1">
-                        <span class="text-4xl font-extrabold text-white">$350</span>
-                        <span class="text-slate-400 text-sm">/ session</span>
+                        <span class="text-4xl font-serif font-bold text-warmstone-900">$350</span>
+                        <span class="text-warmstone-800/60 text-sm">/ session</span>
                     </div>
-                    <ul class="space-y-3 text-slate-300 text-sm">
+                    <ul class="space-y-3 text-warmstone-800/80 text-sm">
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             45-Minute On-Location Shoot
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             1 Designated Northern California Location
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             25+ Professionally Edited High-Res Images
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            Online Digital Gallery & Print Release
                         </li>
                     </ul>
                 </div>
                 <div class="pt-8">
-                    <a href="#contact" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 rounded-xl transition-all">
+                    <a href="#contact" class="block w-full text-center bg-warmstone-100 hover:bg-warmstone-200 text-warmstone-900 font-medium py-3 rounded-xl transition-all">
                         Book Essential
                     </a>
                 </div>
             </div>
 
-            <!-- Tier 2: Signature (Featured) -->
-            <div class="bg-slate-800 rounded-2xl p-8 border-2 border-emerald-500/80 flex flex-col justify-between shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+            <!-- Tier 2 -->
+            <div class="bg-white rounded-2xl p-8 border-2 border-terracotta-600 flex flex-col justify-between shadow-md relative">
+                <div class="absolute top-0 right-0 bg-terracotta-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
                     Most Popular
                 </div>
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-xl font-bold text-white">Signature Story</h3>
-                        <p class="text-slate-400 text-sm mt-1">Comprehensive coverage for families, couples, and major milestones.</p>
+                        <h3 class="text-xl font-serif font-semibold text-warmstone-900">Signature Story</h3>
+                        <p class="text-warmstone-800/60 text-sm mt-1">Comprehensive coverage for families and couples.</p>
                     </div>
                     <div class="flex items-baseline gap-1">
-                        <span class="text-4xl font-extrabold text-white">$600</span>
-                        <span class="text-slate-400 text-sm">/ session</span>
+                        <span class="text-4xl font-serif font-bold text-warmstone-900">$600</span>
+                        <span class="text-warmstone-800/60 text-sm">/ session</span>
                     </div>
-                    <ul class="space-y-3 text-slate-300 text-sm">
+                    <ul class="space-y-3 text-warmstone-800/80 text-sm">
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             Up to 90-Minute Extended Shoot
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             Up to 2 Nearby Locations / Outfit Changes
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            40+ Fully Edited High-Res Images
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            Priority Delivery & Private Online Gallery
+                            <svg class="w-5 h-5 text-terracotta-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            60+ Fully Edited High-Res Images
                         </li>
                     </ul>
                 </div>
                 <div class="pt-8">
-                    <a href="#contact" class="block w-full text-center bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3 rounded-xl transition-all shadow-lg">
+                    <a href="#contact" class="block w-full text-center bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium py-3 rounded-xl transition-all shadow-lg">
                         Book Signature
                     </a>
                 </div>
             </div>
-
         </div>
-         <!-- Custom & Travel Note -->
-    <div class="max-w-2xl mx-auto mt-12 text-center px-6 space-y-3">
-        <h4 class="text-white font-medium text-sm tracking-wide">Looking for something custom or outside the East Bay?</h4>
-        <p class="text-slate-400 text-sm leading-relaxed">
-            We happily travel across San Francisco, Oakland, and the broader Bay Area for custom milestone celebrations, larger family gatherings, or multi-location sessions. Minor travel fees may apply based on distance from Concord—simply reach out via the form below to scope your exact vision.
-        </p>
-    </div>
+
+        <!-- Custom & Travel Note -->
+        <div class="max-w-2xl mx-auto mt-12 text-center px-6 space-y-3">
+            <h4 class="text-warmstone-900 font-medium text-sm tracking-wide">Looking for something custom or outside the East Bay?</h4>
+            <p class="text-warmstone-800/70 text-sm leading-relaxed">
+                We happily travel across San Francisco, Oakland, and the broader Bay Area for custom milestone celebrations or multi-location sessions. Minor travel fees may apply based on distance from Concord.
+            </p>
+        </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section id="contact" class="py-24 px-6 max-w-3xl mx-auto border-t border-slate-800">
+    <section id="contact" class="py-24 px-6 max-w-3xl mx-auto">
         <div class="text-center space-y-4 mb-12">
-            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
                 Get in Touch
             </span>
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Start a Project</h2>
-            <p class="text-slate-400">Fill out the details below, and your inquiry will land straight in our inbox.</p>
+            <h2 class="text-3xl md:text-4xl font-serif font-normal text-warmstone-900">Start a Conversation</h2>
+            <p class="text-warmstone-800/70">Fill out the details below, and your inquiry will land straight in our inbox.</p>
         </div>
 
-        <form action="https://formsubmit.co/info.mountdiablomedia@gmail.com" method="POST" class="space-y-6 bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 shadow-xl backdrop-blur-sm">
-            
-            <input type="hidden" name="_subject" value="New Inquiry from Mount Diablo Media Website">
+        <form action="https://formsubmit.co/info.mountdiablomedia@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-3xl border border-warmstone-200 shadow-xl">
+            <input type="hidden" name="_subject" value="New Milestone Inquiry from Website">
             <input type="hidden" name="_captcha" value="false">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
-                    <input type="text" name="name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="John Doe">
+                    <label class="block text-sm font-medium text-warmstone-800 mb-2">Your Name</label>
+                    <input type="text" name="name" required class="w-full bg-warmstone-50 border border-warmstone-200 rounded-xl px-4 py-3 text-warmstone-900 focus:outline-none focus:border-terracotta-600 transition-colors" placeholder="John Doe">
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
-                    <input type="email" name="email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="john@example.com">
+                    <label class="block text-sm font-medium text-warmstone-800 mb-2">Email Address</label>
+                    <input type="email" name="email" required class="w-full bg-warmstone-50 border border-warmstone-200 rounded-xl px-4 py-3 text-warmstone-900 focus:outline-none focus:border-terracotta-600 transition-colors" placeholder="john@example.com">
                 </div>
             </div>
 
             <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Project Details & Vision</label>
-                <textarea name="message" rows="5" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Tell us about your commercial production or milestone session..."></textarea>
+                <label class="block text-sm font-medium text-warmstone-800 mb-2">Project Details & Vision</label>
+                <textarea name="message" rows="5" required class="w-full bg-warmstone-50 border border-warmstone-200 rounded-xl px-4 py-3 text-warmstone-900 focus:outline-none focus:border-terracotta-600 transition-colors" placeholder="Tell us about your milestone session..."></textarea>
             </div>
 
-            <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3.5 rounded-lg transition-all shadow-lg">
+            <button type="submit" class="w-full bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium py-3.5 rounded-xl transition-all shadow-lg">
                 Send Message
             </button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 bg-slate-950 py-12 px-6 text-center text-sm text-slate-500">
+    <footer class="border-t border-warmstone-200 bg-warmstone-100 py-12 px-6 text-center text-sm text-warmstone-800/60">
         <p>&copy; 2026 Mount Diablo Media. All rights reserved. Based in Concord, CA.</p>
     </footer>
 
@@ -272,6 +267,5 @@
 
         setInterval(nextSlide, 5000);
     </script>
-
 </body>
 </html>
