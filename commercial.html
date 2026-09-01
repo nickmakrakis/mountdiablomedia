@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Production | Mount Diablo Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmstone: {
+                            50: '#fdfbf7',
+                            100: '#f4ece1',
+                            800: '#2d2721',
+                            900: '#1c1815',
+                        },
+                        terracotta: {
+                            600: '#b85d43',
+                            700: '#9e4c34',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warmstone-50 text-warmstone-800 font-sans antialiased selection:bg-terracotta-600 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-warmstone-50/90 backdrop-blur-md border-b border-warmstone-100">
+        <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/Mount Diablo Media logo.png" alt="Mount Diablo Media Logo" class="h-20 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-warmstone-800/80">
+                <a href="index.html" class="hover:text-terracotta-600 transition-colors">&larr; Back to Private Milestones</a>
+            </nav>
+
+            <div>
+                <a href="index.html#contact" class="bg-terracotta-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-terracotta-700 transition-all shadow-sm">
+                    Inquire for Commercial
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center space-y-6">
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
+            Commercial Work & Brand Production
+        </span>
+        <h1 class="text-4xl md:text-5xl font-serif font-normal text-warmstone-900">Commercial Production</h1>
+        <p class="text-warmstone-800/70 max-w-2xl mx-auto text-lg">
+            High-impact visual content tailored for brand campaigns, professionals, and commercial storytelling across the Bay Area.
+        </p>
+    </section>
+
+    <!-- Commercial Portfolio Grid -->
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
+                <img src="images/Tom%20Hofbauer.jpg" alt="Tom Hofbauer Commercial Capture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-medium text-sm">Commercial Portraiture & Branding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Scoping Banner -->
+    <section class="py-16 bg-warmstone-100 border-t border-warmstone-200 text-center px-6">
+        <div class="max-w-2xl mx-auto space-y-4">
+            <h3 class="text-2xl font-serif font-normal text-warmstone-900">Custom Commercial Scoping</h3>
+            <p class="text-warmstone-800/70 text-sm leading-relaxed">
+                Commercial retainers, drone cinematography, and brand asset libraries are custom-quoted based on deliverables, licensing, and production requirements.
+            </p>
+            <div class="pt-4">
+                <a href="index.html#contact" class="bg-warmstone-900 hover:bg-warmstone-800 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-md inline-block">
+                    Request a Commercial Proposal
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-warmstone-200 bg-warmstone-50 py-12 px-6 text-center text-sm text-warmstone-800/60">
+        <p>&copy; 2026 Mount Diablo Media. All rights reserved. Based in Concord, CA.</p>
+    </footer>
+
+</body>
+</html>
