@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mount Diablo Media | High-End Visual Content Production</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-600 selection:text-white">
 
-    <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
-            <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
                 <img src="Mount Diablo Media logo.png" alt="Mount Diablo Media Logo" class="h-24 w-auto object-contain">
             </a>
 
-            <!-- Nav Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
                 <a href="#portfolio" class="hover:text-amber-600 transition-colors">Featured Work</a>
                 <a href="#commercial" class="hover:text-amber-600 transition-colors">Commercial</a>
                 <a href="#milestones" class="hover:text-amber-600 transition-colors">Private Milestones</a>
             </nav>
 
-            <!-- CTA Button -->
             <div>
                 <a href="#contact" class="bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-800 transition-all shadow-sm">
                     Get in Touch
@@ -33,44 +28,36 @@
         </div>
     </header>
 
-    <!-- Hero Section with Background Carousel -->
     <section class="relative py-32 md:py-48 px-6 flex items-center justify-center text-center overflow-hidden bg-slate-950 border-b border-slate-800/60">
-        <!-- Background Image Carousel Container -->
         <div id="hero-carousel" class="absolute inset-0 z-0">
-            <!-- Image 1 -->
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 hero-slide" style="background-image: url('images/Calvin:Cristina Kissing.jpg');"></div>
-            <!-- Image 2 -->
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 hero-slide" style="background-image: url('images/Garcia%20Kiss%20Noa.jpg');"></div>
-            <!-- Image 3 -->
             <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 hero-slide" style="background-image: url('images/Wedding%20Dress%20on%20Stairs.jpg');"></div>
             
-            <!-- Dark Overlay for Readability -->
-            <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-[2px]"></div>
+            <div class="absolute inset-0 bg-slate-950/40"></div>
         </div>
 
-        <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mx-auto space-y-8">
-            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">
+            <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-full backdrop-blur-md">
                 Serving the Entire Bay Area & Northern California
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md">
                 Premier Bay Area Commercial Production & Private Milestones
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light">
+            <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto font-light drop-shadow">
                 Elevated visual content for high-impact brand campaigns and timeless personal storytelling.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                 <a href="#commercial" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg">
                     Explore Commercial
                 </a>
-                <a href="#milestones" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-medium px-8 py-3.5 rounded-full border border-slate-700 backdrop-blur-sm transition-all">
+                <a href="#milestones" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-900 text-slate-200 font-medium px-8 py-3.5 rounded-full border border-slate-700 backdrop-blur-sm transition-all">
                     Explore Private Sessions
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Carousel Script -->
     <script>
         const slides = document.querySelectorAll('.hero-slide');
         let currentSlide = 0;
