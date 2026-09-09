@@ -78,6 +78,21 @@
     </section>
 
 <!-- Portfolio Section (Updated to 5-Photo Infinite Carousel) -->
+    <style>
+    @keyframes scrollTrack {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .carousel-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: max-content !important;
+        animation: scrollTrack 30s linear infinite !important;
+    }
+    .carousel-track:hover {
+        animation-play-state: paused !important;
+    }
+</style>
 <section id="portfolio" class="py-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-16 text-center">
         <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Work</h2>
