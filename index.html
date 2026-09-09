@@ -77,39 +77,85 @@
         </div>
     </section>
 
-    <section id="milestones" class="py-24 px-6 max-w-7xl mx-auto space-y-12">
-        <div class="text-center space-y-4">
-            <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
-                Private Sessions
-            </span>
-            <h2 class="text-3xl md:text-4xl font-serif font-normal text-warmstone-900">Private Milestones Portfolio</h2>
-            <p class="text-warmstone-800/70 max-w-xl mx-auto">Intimate portraits, couple sessions, and family legacies captured with a natural, artistic touch.</p>
+   <!-- Portfolio Section (Updated to Infinite Carousel) -->
+    <section id="portfolio" class="py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-16 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Featured Work</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">A glimpse into our recent captures spanning wilderness landscapes, night skies, and cinematic perspectives.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
-                <img src="images/Avery%20Brooklyn%20Portrait.jpg" alt="Portraits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-medium text-sm">Portraits & Individuals</span>
+        <div class="relative w-full overflow-hidden group">
+            <!-- Fade Edges -->
+            <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+
+            <!-- Rotating Track (Paused on hover) -->
+            <div class="flex w-max animate-infinite-carousel group-hover:[animation-play-state:paused]" style="gap: 1.5rem;">
+                
+                <!-- Set 1: 6 Photos -->
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Individual Portraits</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
-                <img src="images/Calvin:Cristina%20Kissing.jpg" alt="Calvin and Cristina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-medium text-sm">Intimate Couple Session</span>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Family</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
-                <img src="images/Garcia%20Kiss%20Noa.jpg" alt="Garcia Kiss Noa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-medium text-sm">Milestone Moments</span>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Aerial & Drone Production</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group relative bg-warmstone-100 rounded-2xl overflow-hidden aspect-[4/3] border border-warmstone-200 shadow-sm">
-                <img src="images/Wedding%20Dress%20on%20Stairs.jpg" alt="Wedding Dress on Stairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-warmstone-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                    <span class="text-white font-medium text-sm">Editorial & Detail Capture</span>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Brand Marketing</span>
+                    </div>
                 </div>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Sierra Nevada Summits</span>
+                    </div>
+                </div>
+
+                <!-- Set 2: Exact Duplicate for Infinite Seamless Loop -->
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Individual Portraits</span>
+                    </div>
+                </div>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Family</span>
+                    </div>
+                </div>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Aerial & Drone Production</span>
+                    </div>
+                </div>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Brand Marketing</span>
+                    </div>
+                </div>
+                <div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+                    <img src="images/alpine-landscape.jpg" alt="Alpine Landscapes" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Sierra Nevada Summits</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
