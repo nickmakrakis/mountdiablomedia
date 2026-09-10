@@ -35,6 +35,7 @@
             </a>
 
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-warmstone-800/80">
+                <a href="#portfolio" class="hover:text-terracotta-600 transition-colors">Portfolio</a>
                 <a href="#milestones" class="hover:text-terracotta-600 transition-colors">Private Milestones</a>
                 <a href="#pricing" class="hover:text-terracotta-600 transition-colors">Packages</a>
             </nav>
@@ -66,8 +67,9 @@
             <span class="inline-block text-xs font-semibold tracking-widest uppercase px-4 py-1.5 bg-warmstone-900/60 text-amber-200 border border-amber-200/20 rounded-full backdrop-blur-md">
                 Serving the Entire Bay Area & Northern California
             </span>
+
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#milestones" class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg">
+                <a href="#portfolio" class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg">
                     View Portfolio
                 </a>
                 <a href="#contact" class="w-full sm:w-auto bg-warmstone-900/80 hover:bg-warmstone-900 text-warmstone-100 font-medium px-8 py-3.5 rounded-full border border-warmstone-700 backdrop-blur-sm transition-all">
@@ -93,62 +95,63 @@
         animation-play-state: paused !important;
     }
 </style>
-    <link rel="preload" as="image" href="/path/to/avery-portrait.jpg">
+    <link rel="preload" as="image" href="images/avery-portrait.jpg">
 <section id="portfolio" class="py-24 overflow-hidden">
-    <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
-                Featured Work
-            </span>
-        <p class="text-slate-600 max-w-xl mx-auto">A glimpse into our recent captures spanning individual and family portraits, commercial brand marketing, weddings, and more!</p>
+    <div class="text-center space-y-4 mb-16 px-6">
+        <span class="text-xs font-semibold tracking-widest uppercase px-3 py-1 bg-terracotta-600/10 text-terracotta-600 border border-terracotta-600/20 rounded-full">
+            Featured Work
+        </span>
+        <p class="text-warmstone-800/70 max-w-xl mx-auto">A glimpse into our recent captures spanning individual and family portraits, commercial brand marketing, weddings, and more!</p>
     </div>
 
     <div class="relative w-full overflow-hidden group">
         <!-- Fade Edges -->
-        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-warmstone-50 to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-warmstone-50 to-transparent z-10 pointer-events-none"></div>
 
         <!-- Rotating Track (Paused on hover) -->
         <div class="carousel-track" style="gap: 1.5rem;">
             
             <!-- ========================================== -->
-            <!-- SET 1: Your 5 Photos                       -->
+            <!-- SET 1: Your 5 Photos                        -->
             <!-- ========================================== -->
 
            <!-- Photo 1 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
-    <img src="images/avery-portrait" alt="Avery Brooklyn Portrait" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
+    <img src="images/avery-portrait.jpg" alt="Avery Brooklyn Portrait" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Portrait & Lifestyle</span>
     </div>
 </div>
 
 <!-- Photo 2 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/cal-cristina.jpg" alt="Calvin and Cristina" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Weddings & Couples</span>
     </div>
 </div>
 
 <!-- Photo 3 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/hofbauer.jpg" alt="Tom Hofbauer" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Commercial & Brand</span>
     </div>
 </div>
 
 <!-- Photo 4 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/garcia-kiss.jpg" alt="Garcia and Noa" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Candid Moments</span>
     </div>
 </div>
 
 <!-- Photo 5 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/ny-wedding.jpg" alt="Wedding Dress on Stairs" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Bridal & Editorial</span>
     </div>
 </div>
@@ -159,41 +162,41 @@
             <!-- ========================================== -->
 
           <!-- Photo 1 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/avery-portrait.jpg" alt="Avery Brooklyn Portrait" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Portrait & Lifestyle</span>
     </div>
 </div>
 
 <!-- Photo 2 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/cal-cristina.jpg" alt="Calvin and Cristina" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Weddings & Couples</span>
     </div>
 </div>
 
 <!-- Photo 3 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/hofbauer.jpg" alt="Tom Hofbauer" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Commercial & Brand</span>
     </div>
 </div>
 
 <!-- Photo 4 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/garcia-kiss.jpg" alt="Garcia and Noa" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Candid Moments</span>
     </div>
 </div>
 
 <!-- Photo 5 -->
-<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-slate-200 aspect-[4/3]">
+<div class="w-[320px] md:w-[380px] shrink-0 group/card relative overflow-hidden rounded-2xl shadow-md bg-warmstone-100 aspect-[4/3]">
     <img src="images/ny-wedding.jpg" alt="Wedding Dress on Stairs" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
+    <div class="absolute inset-0 bg-gradient-to-t from-warmstone-900/80 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-end p-6">
         <span class="text-white font-medium">Bridal & Editorial</span>
     </div>
 </div>
